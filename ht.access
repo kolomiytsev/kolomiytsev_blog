@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+RewriteRule ^page/([0-9]+)$ ?page=$1 [L]
+RewriteRule ^blog$ /blog.php [L]
+RewriteRule ^blog/category/([0-9]+)$ /blog.php?category=$1 [L]
+RewriteRule ^blog/post/([0-9]+)$ /blog.php?post=$1 [L]
+
+#RewriteRule ^(.*)$ index.php [L,QSA]
+
